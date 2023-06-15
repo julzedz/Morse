@@ -10,5 +10,7 @@ ALPHABET = {
   end
 
   def decode_word(word)
-    
+    str = ''
+    word.split.each { |i| str += decode_char(i) }
+    str
   end
